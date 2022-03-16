@@ -1,0 +1,15 @@
+{
+  "title": "I-LexConnect",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add your I-LexConnect account",
+        "description": "Provide your I-LexConnect credentials",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    }
+  }
+}

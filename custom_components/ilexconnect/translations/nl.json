@@ -1,0 +1,15 @@
+{
+  "title": "I-LexConnect",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Je I-LexConnect account toevoegen",
+        "description": "Geef je I-LexConnect account gegevens in",
+        "data": {
+          "username": "Gebruikersnaam",
+          "password": "Wachtwoord"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "domain": "ilexconnect",
+  "name": "I-LexConnect",
+  "documentation": "https://github.com/bertouttier/ilexconnect-hacs",
+  "issue_tracker": "https://github.com/bertouttier/ilexconnect-hacs/issues",
+  "codeowners": ["@bertouttier"],
+  "config_flow": true
+}
