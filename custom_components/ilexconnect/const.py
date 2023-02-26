@@ -7,7 +7,7 @@ from homeassistant.components.sensor import (
     SensorStateClass,
 )
 from homeassistant.helpers.entity import EntityCategory
-from homeassistant.const import PERCENTAGE
+from homeassistant.const import (PERCENTAGE, VOLUME_LITERS)
 
 DOMAIN = "ilexconnect"
 
@@ -17,6 +17,7 @@ API_TIMEOUT = 20
 LOGGER = logging.getLogger(__package__)
 
 API_CS1    = "getCS1"            # water reserve percent
+API_RES    = "getRES"            # water reserve in liter
 API_IWH    = "getIWH"            # inkomende waterhardheid (fH graden)
 API_OWH    = "getOWH"            # uitgaande waterhardheid (fH graden)
 API_SD1    = "getSD1"            # zout reserve in dagen
@@ -36,6 +37,12 @@ SENSOR_TYPES = (
         key=API_CS1,
         native_unit_of_measurement=PERCENTAGE,
         name="Water reserve",
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
+    SensorEntityDescription(
+        key=API_RES,
+        native_unit_of_measurement=VOLUME_LITERS,
+        name="Water reserve volume",
         state_class=SensorStateClass.MEASUREMENT,
     ),
     SensorEntityDescription(

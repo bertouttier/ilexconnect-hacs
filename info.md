@@ -11,6 +11,7 @@ This custom component allows you to add [I-Lexconnect](https://www.i-lexconnect.
 A few sensors will show up:
 
 - water reserve (%)
+- water reserve (L)
 - incoming water hardness (fH°)
 - outcoming water hardness (fH°)
 - salt reserve (days)
